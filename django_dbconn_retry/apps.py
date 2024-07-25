@@ -18,9 +18,9 @@ database_modules = [
     ("django.db.utils", "OperationalError"),
     ("psycopg2", "OperationalError"),
     ("psycopg", "OperationalError"),
-    ("sqlite3", "OperationalError"),
-    ("MySQLdb", "OperationalError"),
     ("pyodbc", "InterfaceError"),
+    ("psycopg2", "InterfaceError"),
+    ("django.db.utils", "InterfaceError"),
 ]
 
 for module_name, error_name in database_modules:
